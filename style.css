@@ -1,0 +1,233 @@
+/*
+Theme Name: Creation Theme Theme
+URI: http://www.fran6art.com/
+Description: The first theme created by Francis Chouquet.
+Version: 0.1
+Author: Francis Chouquet
+Creation Theme by Francis Chouquet || http://www.fran6art.com
+*/
+
+@import url('styles/tufte.css');
+
+/*TODO
+https://stackoverflow.com/questions/16056591/font-scaling-based-on-width-of-container
+ */
+
+
+h1 a:link,
+h2 a:link,
+h3 a:link,
+h4 a:link,
+h5 a:link,
+h6 a:link {
+    background: none;
+    text-shadow: none;
+}
+
+#header
+{
+    float:left;
+    width:100%;
+    /*border-bottom: 4px darkgray;*/
+    border-bottom: 1px solid  #CCCCCC;
+    /*border-width: thin;*/
+}
+
+#siteBanner
+{
+    float:left;
+    width:60%;
+    padding:1em ;
+}
+
+#siteTitle
+{
+    font-size: 400%;
+}
+
+#siteTitle a:link {
+    background: none;
+    text-shadow: none;
+}
+
+#siteDesc
+{
+    font-size: 150%;
+}
+
+#main-navigation {
+    float:right;
+    width:50%;
+    font-family: Montserrat, "Helvetica Neue", sans-serif;
+}
+
+#main-navigation ul {
+    list-style: none;
+    margin: 0;
+
+}
+
+#main-navigation li {
+    display:inline;
+    /*border-top: 1px solid #d1d1d1;*/
+    position: relative;
+    font-size: 1.54rem;
+    padding: 4px;
+    /*line-height: 2rem;*/
+}
+
+
+#main-navigation a {
+    color: #1a1a1a;
+    background: none;
+    text-shadow: none;
+    /*
+    display: block;
+
+    #line-height: 1.3125;
+    outline-offset: -1px;
+    padding: 0.84375em 0;
+     */
+}
+
+
+#main-navigation a:hover,
+#main-navigation a:focus {
+    color: #007acc;
+}
+
+#main-navigation .current-menu-item > a,
+#main-navigation .current-menu-ancestor > a {
+    font-weight: 700;
+}
+
+#main-navigation ul ul {
+    display: none;
+    margin-left: 0.875em;
+}
+
+no-js #main-navigation ul ul {
+    display: block;
+}
+
+#main-navigation ul .toggled-on {
+    display: block;
+}
+
+#sidebar {
+    /*display: none;*/
+    float:left;
+    width:21%;
+    height: 100vh;
+    border-right: 1px solid  #CCCCCC;
+}
+
+#page {
+    padding:2px;
+    float:right;
+    width:76%;
+    /*height: 100%;*/
+}
+
+.postMetaData {
+    position: absolute;
+    margin-left: -220px;
+    margin-top:5rem;
+    width:15%;
+}
+
+#comments.comments-area
+{
+    border-top: 1px solid  #EEEEEE;
+}
+
+.comment-body
+{
+    background-color: #EEEEEE;
+}
+
+
+#footer{
+    float:left;
+    width:100%;
+    border-top: 1px solid  #CCCCCC;
+}
+
+#footer_CC_licence
+{
+    float:left;
+    width:25%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#footer_Design
+{
+    float:left;
+    width:25%;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+#footer_Contact {
+    float: left;
+    width: 25%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#footer_Icons
+{
+    float:left;
+    width:25%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.footer_icon
+{
+    display:inline-block; padding-right: 5px; vertical-align: middle; width: 15%; float:left;     background: none;
+    text-shadow: none; text-decoration: none;
+}
+
+#post-81 #CV_ML {display:block;  width:70%; float:left;}
+
+#post-81 #CV_ML_header {display:block;  width:100%; float:left;}
+#post-81 #CV_ML_header_Text {display:block; float:left;  width: 65%;}
+#post-81 #CV_ML_myPhoto {display:block; float:right;  width: 35%;}
+#post-81 #CV_ML_header_ToolBar{display:block; width: 100%; background: none;
+    text-shadow: none; text-decoration: none;}
+#post-81 .CV_ML_icon{display:inline-block; padding-right: 5px; vertical-align: middle; width: 15%; float:left;     background: none;
+    text-shadow: none; text-decoration: none;}
+
+
+
+#post-81 #CV_ML_Name {display:block; font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif; font-size: 2.5em;}
+#post-81 #CV_ML_Prenom{color:#555555;}
+#post-81 #CV_ML_Nom{color:#000000; /*font-weight: bold;*/}
+
+#post-81 #CV_ML_ResearchInterest {display:block; margin-left: auto;
+    margin-right: auto; width:50%;}
+
+#post-81 #ML_CV_Section {display:block;  width:100%; float:left;}
+#post-81 #CV_ML_SectionTitle {text-align:center; font-size: 1.5em; color:#AA0000; font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;}
+
+#post-81 .CV_ML_Skills {display:block; float:left; width:25%; }
+#post-81 .CV_ML_Skills_header {display:block; float:left; text-align:center;  width:100%; font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif; font-size: 1.3em;  padding-top: 35px; padding-bottom: 35px; font-weight:bold;}
+#post-81 .CV_ML_Skills_List {display:block; float:left; text-align:center;  width:100%;}
+
+
+#post-81 #CV_ML_Entry{}
+#post-81 #CV_ML_date{font-weight:bold;}
+#post-81 hr.style-CV {
+    width: 80%;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    text-align:center; margin: 0 auto;
+}
+
+@media (max-width: 800px) {
+    /* CSS that should be displayed if width is equal to or less than 800px goes here */
+}
